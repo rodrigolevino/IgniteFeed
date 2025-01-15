@@ -8,9 +8,9 @@ import { Avatar } from "./Avatar"
 import { useState } from "react"
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState([])
+  const [comments, setComments] = useState(['Boa!'])
 
-  const [newCommentText, setNewCommentText] = useState("")
+  const [newCommentText, setNewCommentText] = useState('')
 
   const publishedDateFormatted = format(
     publishedAt,
@@ -26,22 +26,29 @@ export function Post({ author, publishedAt, content }) {
   })
 
   function handleCreateNewComment() {
-    event.preventDefault()
+    event.preventDefault();
 
     setComments([...comments, newCommentText]);
-    setNewCommentText('');
+    setNewCommentText("");
   }
 
   function handleNewCommentChange() {
+    event.target.setCustomValidity("");
     setNewCommentText(event.target.value);
   }
 
+  function handleNewCommentInvalid() {
+    event.target.setCustomValidity("Este campo é obrigatório!");
+  }
+
   function deleteComment(commentToDelete) {
-    const commentsWithoutDeletedOne = comments.filter(comment => {
+    const commentsWithoutDeletedOne = comments.filter((comment) => {
       return comment != commentToDelete
     })
-    setComments(commentsWithoutDeletedOne);
+    setComments(commentsWithoutDeletedOne)
   }
+
+  const isNewCommentEmpty = newCommentText.length === 0;
 
   return (
     <article className={styles.post}>
@@ -84,16 +91,26 @@ export function Post({ author, publishedAt, content }) {
           value={newCommentText}
           placeholder="Escreva um comentário..."
           onChange={handleNewCommentChange}
+          onInvalid={handleNewCommentInvalid}
+          required
         />
 
         <footer>
-          <button type="submit">Publicar</button>
+          <button type="submit" disabled={isNewCommentEmpty}>
+            Publicar
+          </button>
         </footer>
       </form>
 
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment key={comment} content={comment} onDeleteComment={deleteComment}/>
+          return (
+            <Comment
+              key={comment}
+              content={comment}
+              onDeleteComment={deleteComment}
+            />
+          )
         })}
       </div>
     </article>
