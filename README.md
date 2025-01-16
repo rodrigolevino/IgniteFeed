@@ -1,15 +1,12 @@
 <div align="center">
+  <h1>Ignite Feed</h1>
+  <p>Este é um projeto desenvolvido como parte do curso de React da <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>. O projeto utiliza as tecnologias React, TypeScript, CSS e HTML.</p>
 
-# Ignite Feed
+  <p>
+    <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  </p>
 
-Este é um projeto desenvolvido como parte do curso de React da [Rocketseat](https://rocketseat.com.br). O projeto utiliza as tecnologias React, TypeScript, CSS e HTML.
-
-<p>
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
-
-<img src="./src/assets/ignitefeedpreview.png" alt="Preview do Ignite Feed" width="600" />
-
+  <img src="./src/assets/ignitefeedpreview.png" alt="Preview do Ignite Feed" width="600" />
 </div>
 
 ## 🔖 Índice
@@ -21,7 +18,7 @@ Este é um projeto desenvolvido como parte do curso de React da [Rocketseat](htt
 
 ---
 
-## 📘 Sobre o Projeto
+## 📘 <a id="sobre-o-projeto"></a>Sobre o Projeto
 
 O objetivo principal deste projeto foi consolidar e aprimorar os conhecimentos em React e TypeScript adquiridos durante o curso. Ele apresenta uma aplicação funcional que explora os conceitos de:
 
@@ -33,7 +30,7 @@ O objetivo principal deste projeto foi consolidar e aprimorar os conhecimentos e
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 <a id="tecnologias-utilizadas"></a>Tecnologias Utilizadas
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -44,7 +41,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-## 🛠️ Instalação e Execução
+## 🛠️ <a id="instalacao-e-execucao"></a>Instalação e Execução
 
 Siga os passos abaixo para rodar o projeto localmente:
 
@@ -52,34 +49,3 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 ```bash
   git clone https://github.com/rodrigolevino/IgniteFeed.git
-```
-
-2. Navegue até o diretório do projeto:
-
-```bash
-  cd IgniteFeed
-```
-
-3. Instale as dependências:
-
-```bash
-  npm install
-```
-
-4. Inicie o servidor de desenvolvimento:
-
-```bash
-  npm run dev
-```
-
-5. Acesse o projeto em seu navegador:
-
-```
-http://localhost:5173
-```
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Para mais informações, consulte o arquivo [LICENSE](./LICENSE).
