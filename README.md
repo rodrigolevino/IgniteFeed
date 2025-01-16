@@ -54,7 +54,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 2. Navegue até o diretório do projeto:
 
 ```bash
-  cd IgniteFeed
+  cd Sua_Pasta
 ```
 
 3. Instale as dependências:
