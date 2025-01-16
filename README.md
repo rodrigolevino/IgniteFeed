@@ -49,3 +49,34 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 ```bash
   git clone https://github.com/rodrigolevino/IgniteFeed.git
+```
+
+2. Navegue até o diretório do projeto:
+
+```bash
+  cd IgniteFeed
+```
+
+3. Instale as dependências:
+
+```bash
+  npm install
+```
+
+4. Inicie o servidor de desenvolvimento:
+
+```bash
+  npm run dev
+```
+
+5. Acesse o projeto em seu navegador:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📝 <a id="licenca"></a>Licença
+
+Este projeto está sob a licença MIT. Para mais informações, consulte o arquivo [LICENSE](./LICENSE).
